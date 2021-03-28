@@ -1,0 +1,53 @@
+/*Element selector*/
+
+article{color: white;}
+
+
+span{font-size: 15px;}
+
+ul{list-style-type: none;}
+
+form{padding: 10px;}
+
+form fieldset li{color: slateblue;
+                font-size: 20px;
+                font-weight: bold;}
+
+form input, textarea{width: 100%;}
+
+
+/*Class*/
+
+.button{background-color: cadetblue;
+        border-radius: 5px;
+        color: white;
+        font-size: 17px;
+        height: 40px;
+        width: 70px;}
+
+.fs-blue{background-color: darkseagreen;
+         padding: 10px 5px 0px 5px;
+         margin: -10px -10px 0px -10px;}
+
+.fs-white{background-color: white;
+         margin: 10px -5px 0px -5px;}
+
+.fs-gray{background-color: darkgray;
+         margin: 0px 10px 0px -10px;}
+
+.separate{display: flex;
+    justify-content: space-between;}
+
+.right{display: flex;
+    align-items: flex-end;}
+
+.img{height: 25px;
+     width: 25px;}
+
+.flex{display: flex;
+      flex-flow: wrap;}
+
+.this-input{color: black;
+          background-color: skyblue;}
+
+/*ID*/

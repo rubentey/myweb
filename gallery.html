@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Garage page of gallery</title>
+
+<!--Meta tags-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<!--Links tags-->
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/common_style.css">
+        <link rel="stylesheet" href="css/gallery_style.css">
+
+    </head>
+
+<!--Body-->
+    <body>
+        
+        <h1 id="up">Garage - GALLERY</h1>
+        
+<!--nav bar top-->
+        <section>
+            <nav>
+                <ul class="roll">
+                    <li class="phone dropdown col-s-12 col-12">
+                        <i href="#dropdown" class="dropbtn">
+                            <img class="logo" src="images/common_img/nav_logo.png" alt="logo del menu"></i>
+                                <ul class="dropdown-content drop-color">
+                                    <a class="nav col-s-3 col-3" href="index.html">CARS</a>
+                                    <a class="nav col-s-3 col-3" href="riders.html">RIDERS</a>
+                                    <a class="nav col-s-3 col-3" href="form.html">FORM</a>
+                                    <a class="this-nav col-s-3 col-3" href="gallery.html">GALLERY</a>
+                                </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="tablet desktop col-s-12 col-12">
+                <ul class="roll">
+                    <li class="nav col-s-3 col-3"><a href="index.html">CARS</a></li>
+                    <li class="nav col-s-3 col-3"><a href="riders.html" >RIDERS</a></li>
+                    <li class="nav col-s-3 col-3"><a href="form.html">FORM</a></li>
+                    <li class="this-nav col-s-3 col-3"><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        
+<!--Middle of the page-->
+
+
+<!--Gallery with flex 1pic/line-phone 2pic/line-tablet 4pic/line-pc -->
+<div class="div-gallery container">
+<nav class="col-3 col-s-6">
+  <ul class="nav-ul">
+    <li><img class="img-gallery" src="images/gallery_img/Barracuda.jpeg" alt="Barracuda">
+  </ul>
+</nav>
+<nav class="col-3 col-s-6">
+  <ul class="nav-ul">
+    <li><img class="img-gallery" src="images/gallery_img/R12.jpeg" alt="BMW R12">
+  </ul>
+</nav>
+<nav class="col-3 col-s-6">
+  <ul class="nav-ul">
+    <li><img class="img-gallery" src="images/gallery_img/Superbird.jpeg" alt="Superbird">
+  </ul>
+</nav>
+<nav class="col-3 col-s-6">
+  <ul class="nav-ul">
+    <li><img class="img-gallery" src="images/gallery_img/R65.jpeg" alt="BMW R65">
+  </ul>
+</nav>
+<nav class="col-3 col-s-6">
+  <ul class="nav-ul">
+    <li><img class="img-gallery" src="images/gallery_img/Prowler.jpeg" alt="Prowler">
+  </ul>
+</nav>
+<nav class="col-3 col-s-6">
+  <ul class="nav-ul">
+    <li><img class="img-gallery" src="images/gallery_img/Moto%20en%20taller.jpeg" alt="Repairing a moto">
+  </ul>
+</nav>
+<nav class="col-3 col-s-6">
+  <ul class="nav-ul">
+    <li><img class="img-gallery" src="images/gallery_img/Fury.jpeg" alt="Fury">
+  </ul>
+</nav>
+<nav class="col-3 col-s-6">
+  <ul class="nav-ul">
+    <li><img class="img-gallery" src="images/gallery_img/RD500.jpeg" alt="RD 500">
+  </ul>
+</nav>
+</div>
+<br>
+        
+<!--JavaScript section-->
+        <hr>
+        <h4 class="center-txt">Adivinator</h4>
+        <p class="center-txt">Lets's see if I can find your favourite!</p>
+
+<span>How many wheels has your favourite vehicle?</span>
+<br><!--yes--><!--n1 is to click one-->
+  <input type="radio" name="n1" id="q11" required> 2 wheels<br>
+  <input type="radio" name="n1" id="q12" required> 4 wheels<br>
+  <input type="radio" name="n1" id="q13" required> None<br>
+<br>
+
+<span>Size?</span>
+<br><!--even and 4-->
+  <input type="radio" name="n2" id="q21" required> Small<br>
+  <input type="radio" name="n2" id="q22" required> Normal<br>
+  <input type="radio" name="n2" id="q23" required> Big<br>
+<br>
+
+<button onclick="cliqui()">Let's find out</button>
+
+<p id="w"></p>
+<p id="s"></p>
+<p id="demo"></p>
+<img id="p" src="" alt="" class="img-js">
+<br>
+
+
+        <hr>
+<br>
+
+<!--End of the page-->
+
+        <footer>
+            <br>
+            <br>
+            <a href="#up">
+        <img class="logo" src="images/common_img/up.jpeg" alt="Go up"></a>
+            <br>
+            <br>
+            <p>Our Social Networks</p>
+            <article>
+                <nav>
+                    <ul>
+                        <li><a href="https://twitter.com/"><img class="logo" src="images/common_img/tw.png" alt="twitter account"></a></li>
+                        <li><a href="https://www.youtube.com/"><img class="logo" src="images/common_img/yt.png" alt="youtube channel"></a></li>
+                        <li><a href="https://www.instagram.com/"><img class="logo" src="images/common_img/ig.png" alt="instagram account"></a></li>
+                        <li><a href="https://www.facebook.com"><img class="logo" src="images/common_img/fb.png" alt="facebook account"></a></li>
+                    </ul>
+                </nav>
+            </article>
+        </footer>
+        
+<!--The script of javascript-->
+        <script>
+            function cliqui() {
+/*wheels*/
+var q11 = document.getElementById("q11").checked;
+var q12 = document.getElementById("q12").checked;
+var q13 = document.getElementById("q13").checked;
+/*size*/
+var q21 = document.getElementById("q21").checked;
+var q22 = document.getElementById("q22").checked;
+var q23 = document.getElementById("q23").checked;
+
+var w=0;
+var s=0;
+var feed="";
+var r="";
+
+/*Pregunta 4 - Pick the correct*/
+if(q11 == true){
+w+=1;
+feed+= "The two wheel choice!<br>";
+} else if(q12 == true){
+w+=2;
+feed+= "The four wheel choice!<br>";
+} else if(q13 == true){
+w+=3;
+feed+= "You selected has no wheel hahaha!<br>";
+} else {
+feed+= "Please select a wheel quantitie! <br>";
+}
+
+if(q21 == true){
+s+=1;
+feed+= "This is the small size! <br>";
+} else if(q22 == true){
+s+=2;
+feed+= "This is the normal size! <br>";
+} else if(q23 == true){
+s+=3;
+feed+= "This is the big size! <br>";
+} else {
+feed+= "Please select size! <br>";
+}
+
+
+if (w == 1 && s == 1){
+r="2 wheel";
+document.getElementById('p').style.display="block";
+document.getElementById('p').src="images/gallery_img/little_moto.jpeg";
+document.getElementById('p').alt="small moto";
+}else if (w == 2 && s == 1){
+r="4 wheel";
+document.getElementById('p').style.display="block";
+document.getElementById('p').src="images/gallery_img/microcar.jpeg";
+document.getElementById('p').alt="small car";
+}else if (w == 3 && s == 1){
+r="So... You prefer a... Piggyback? <br>";
+document.getElementById('p').style.display="block";
+document.getElementById('p').src="images/gallery_img/piggyback.gif";
+document.getElementById('p').alt="piggyback";
+
+/*Normal size*/
+}else if (w == 1 && s == 2){
+r="2 wheel";
+document.getElementById('p').style.display="block";
+document.getElementById('p').src="images/gallery_img/RD500.jpeg";
+document.getElementById('p').alt="normal moto";
+}else if (w == 2 && s == 2){
+r="4 wheel";
+document.getElementById('p').style.display="block";
+document.getElementById('p').src="images/gallery_img/Fury.jpeg";
+document.getElementById('p').alt="normal car";
+}else if (w == 3 && s == 2){
+r="So... You prefer a... Piggyback? <br>";
+document.getElementById('p').style.display="block";
+document.getElementById('p').src="images/gallery_img/piggyback.gif";
+document.getElementById('p').alt="piggyback";
+
+/*Big size*/
+}else if (w == 1 && s == 3){
+r="2 wheel";
+document.getElementById('p').style.display="block";
+document.getElementById('p').src="images/gallery_img/big_moto.jpeg";
+document.getElementById('p').alt="big moto";
+}else if (w == 2 && s == 3){
+r="4 wheel";
+document.getElementById('p').style.display="block";
+document.getElementById('p').src="images/gallery_img/dumper.jpeg";
+document.getElementById('p').alt="big car";
+}else if (w == 3 && s == 3){
+r="So... You prefer a... Piggyback? <br>";
+document.getElementById('p').style.display="block";
+document.getElementById('p').src="images/gallery_img/piggyback.gif";
+document.getElementById('p').alt="piggyback";
+} else {
+r=feed;
+}
+document.getElementById("demo").innerHTML=feed;
+}
+
+        </script>
+    </body>
+</html>
